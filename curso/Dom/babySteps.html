@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test JS</title>
+    <style>
+        body {
+            background-color: #474747;
+            color: antiquewhite;
+            font: normal 1.4em normal;
+        }
+        code {
+            color: greenyellow;
+        }
+    </style>
+</head>
+<body>
+    <h1>Baby Steps no DOM</h1>
+    <p id="test_seletor">Aprendendo a usar o <strong>DOM</strong> em JavaScript ( Teste por Seletor )</p>
+    <p id="test_id">Teste por id</p>
+    <p>Teste por Tag</p>
+    <p><div name="name">Teste por Nome</div></p>
+    <div class="test_class">Clique em mim ( Teste por Class )</div>
+    <h2>Seletores </h2>
+    <p>Formas de selenionar conteudo na pagina</p>
+    <!--IMPORTANTEEEEEEEEEEEEEEEEEE-->
+    <ol type="1">
+        <li>
+            <h3>Por tag :</h3>
+        </li>
+        <p><CODE>document.getElementByTagName('Nome da tag')</CODE></p>
+        <li>
+            <h3>Por ID :</h3>
+        </li>
+        <p><code>document.getElementeById('id')</code></p>
+        <li>
+            <h3>Por nome :</h3>
+        </li>
+        <p>Para objetos <br><code>document.getElementByName('Nao sei')</code></p>
+        <li>
+            <h3>Por Class :</h3>
+        </li>
+        <p><code>document.getElementByClass('class')</code></p>
+        <li>
+            <h3>Por Seletor :</h3>
+        </li>
+        <p><code>document.querrySelector('especificações)</code></p>
+    </ol>
+    <!--IMPORTANTEEEEEEEEEEEEEEEEEE-->
+    <h3>Ex :</h3>
+    <script>
+        var querry = document.querySelector('#test_seletor')
+        var id = document.getElementById('test_id')
+        var tagName = document.getElementsByTagName('p')[2]
+        var d = window.document.getElementsByName('name')[0]
+        var class1 = document.getElementsByClassName('test_class')[0]
+
+        querry.style.color = 'green'
+        tagName.style.color = 'lightgreen'
+        id.style.color = 'lightblue'
+        d.style.color = 'red'
+        class1.style.color = 'yellow'
+
+        window.document.write('Olá, Mundo!')
+    </script>
+</body>
+</html>

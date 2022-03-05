@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test JS</title>
+    <style>
+        body {
+            background-color: #474747;
+            color: antiquewhite;
+            font: normal 1.4em normal;
+        }
+        input {
+            width: 100px;
+            font-size: 1em;
+        }
+        div#res {
+            margin-top: 50px;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema Detran</h1>
+    <p>Velocidade do carro é : <input type="number" name="Km/h" id="vel"> Km/h <input type="button" value="Analisar" id="ver" onclick="verificar()"></p>
+    <div class="res">Resultado :</div>
+    <div class="res">-</div>
+    <script>
+        var res1 = document.getElementsByClassName('res')[0]
+        var res2 = document.getElementsByClassName('res')[1]
+
+        function verificar()
+            var vel = Number(document.querySelector('input#vel').value)
+
+            if (vel > 14){
+                res1.innerHTML(`Sua Velocidade excede os limites do Detran ${vel}Km/h. MULTADO!!`)
+            } else {
+                res1.innerHTML(`A velocidade do seu carro é ${vel}Km/h`)
+            }
+            res2.innerHTML(`Dirija sempre com o cinto de segurança!`)
+        }
+    </script>
+</body>
+</html>
