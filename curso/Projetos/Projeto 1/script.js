@@ -1,6 +1,5 @@
 var data = new Date()
 var hora = data.getHours()
-var hora = 18
 var time = document.querySelector('#time')
 var img = document.querySelector('#img')
 
