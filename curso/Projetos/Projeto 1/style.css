@@ -1,5 +1,39 @@
 @charset "UTF-8";
 
 :root {
+    --c0: #FFE4C4; 
+    --c1: #7EA9AD; 
+    --c2: #A2555E;
+    --c3: ; 
+}
 
+body {
+    background-color: bisque;
+    text-align: center;
+    font: normal 1.4em Arial;
+}
+
+main {
+    background-color: white;
+    width: 560px;
+    height: 310px;
+    margin: 20px auto;
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px 0.5px rgba(0, 0, 0, 0.199);
+}
+
+#time {
+    font-size: 0.9em;
+    margin: 0px;
+    padding: 20px;
+}
+
+img {
+    border-radius: 50%;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.233);
+    width: 40%;
+}
+
+footer {
+    font: normal 0.5em Arial;
 }

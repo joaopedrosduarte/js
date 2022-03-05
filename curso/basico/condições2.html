@@ -25,20 +25,19 @@
     <h1>Sistema Detran</h1>
     <p>Velocidade do carro é : <input type="number" name="Km/h" id="vel"> Km/h <input type="button" value="Analisar" id="ver" onclick="verificar()"></p>
     <div class="res">Resultado :</div>
-    <div class="res">-</div>
+    <div class="res"></div>
     <script>
-        var res1 = document.getElementsByClassName('res')[0]
-        var res2 = document.getElementsByClassName('res')[1]
-
-        function verificar()
+        function verificar(){
             var vel = Number(document.querySelector('input#vel').value)
+            var res1 = document.getElementsByClassName('res')[0]
+            var res2 = document.getElementsByClassName('res')[1]
 
-            if (vel > 14){
-                res1.innerHTML(`Sua Velocidade excede os limites do Detran ${vel}Km/h. MULTADO!!`)
+            if (vel > 14) {
+                res1.innerHTML = `<p>Sua Velocidade excede os limites do Detran ${vel}Km/h. <strong>MULTADO!!</strong></p>`
             } else {
-                res1.innerHTML(`A velocidade do seu carro é ${vel}Km/h`)
+                res1.innerHTML = `<p>A velocidade do seu carro é ${vel}Km/h</p>`
             }
-            res2.innerHTML(`Dirija sempre com o cinto de segurança!`)
+            res2.innerHTML = `<p>Dirija sempre com o cinto de segurança!</p>`
         }
     </script>
 </body>
