@@ -5,11 +5,11 @@ var res = document.querySelector('#res')
 
 function verificar() {
     var Ano = Number(nAno.value)
-    if (Ano <= 0 || Ano > atualAno) {
+    var age = atualAno - Ano
+    if (Ano <= 0 || Ano > atualAno || age > 120) {
         window.alert('[ERRO] Verifique os dados e tente novamente!')
     } else {
         var radsex = document.getElementsByName('radsex')
-        var age = atualAno - Ano
         var gen = ''
         var img = document.createElement('img')
         img.setAttribute('id', 'foto')
