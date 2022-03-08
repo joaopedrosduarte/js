@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test JS</title>
+    <style>
+        body {
+            background-color: #474747;
+            color: antiquewhite;
+            font: normal 1.4em normal;
+        }
+        code {
+            color: yellowgreen;
+        }
+    </style>
+</head>
+<body>
+    <h1>Manipulando valores de vareaveis</h1>
+    <p>Para transformar um dado pego do prompt em um tipo inteiro ou numero flutuante é só usar o comando :<br><br><code>Number.parseInt(window.prompt("Informe um numero")) <br>Number.parseFloat(window.prompt("Informe um numero"))<br>Number(window.prompt("Informe outro numero"))</code> (Generalizado)<br><br> É necessario passar a variavel para um tipo numero pois se houver alguma operação matematica no caso a soma as variaveis vão apenas se cocatenar "juntando" na outra.</p>
+    <h3>Obs:</h3>
+    <p>O comando com Apenas o Number o proprio JavaScript defini um tipo apropriado para a variavel, mas em casos onde precisam de muita precisão é bom usar os mais especificos </p>
+    <h3>Formatando numeros flutuantes :</h3>
+    <p>para definir o numero de casas decimais ( no caso duas casas <br><br>
+    <code>variavel.tofixed(2)</code><br><br>Para substituir o ponto por uma virgula : <code><br><br>variavel.replace('.',',')</code></p>
+
+    <p></p>
+    <h3>Ex:</h3>
+    <!--<div id="res"><p>Resultado</p></div>-->
+    <script>
+        var num1 = Number.parseInt(window.prompt("Informe um numero"))
+        var num2 = Number(window.prompt("Informe outro numero"))
+        var soma = num1 + num2
+        document.write(`Resultado : ${soma}`)
+    </script>
+</body>
+</html>
